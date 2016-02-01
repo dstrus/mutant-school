@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mutants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutant name</th>
+      <th>Power</th>
+      <th>Real name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mutants.each do |mutant| %>
+      <tr>
+        <td><%= mutant.mutant_name %></td>
+        <td><%= mutant.power %></td>
+        <td><%= mutant.real_name %></td>
+        <td><%= link_to 'Show', mutant %></td>
+        <td><%= link_to 'Edit', edit_mutant_path(mutant) %></td>
+        <td><%= link_to 'Destroy', mutant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mutant', new_mutant_path %>

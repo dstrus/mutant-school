@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mutant_id: 
+  term_id: 
+
+two:
+  mutant_id: 
+  term_id: 
