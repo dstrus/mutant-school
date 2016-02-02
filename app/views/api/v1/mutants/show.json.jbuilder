@@ -1,0 +1,12 @@
+json.extract!(
+  @mutant,
+  :id,
+  :mutant_name,
+  :power,
+  :real_name,
+  :created_at,
+  :updated_at,
+  :eligibility_begins_at,
+  :eligibility_ends_at,
+  :may_advise_beginning_at
+)
