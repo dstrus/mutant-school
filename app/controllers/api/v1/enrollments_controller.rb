@@ -17,7 +17,7 @@ class API::V1::EnrollmentsController < API::V1::APIController
   def create
     @enrollment = @parent.enrollments.build enrollment_params
       if @enrollment.save
-        render :show, status: :created, location: api_v1_mutant_enrollment_url(@mutant, @enrollment)
+        render :show, status: :created, location: api_v1_mutant_enrollment_url(@enrollment.mutant_id, @enrollment)
       else
         render json: @enrollment.errors, status: :unprocessable_entity
       end
