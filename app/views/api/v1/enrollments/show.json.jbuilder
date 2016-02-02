@@ -10,3 +10,4 @@ json.student @enrollment.student,
 json.term @enrollment.term, :id, :begins_at, :ends_at
 json.created_at @enrollment.created_at
 json.updated_at @enrollment.updated_at
+json.url api_v1_mutant_enrollment_url(@enrollment.student, @enrollment)

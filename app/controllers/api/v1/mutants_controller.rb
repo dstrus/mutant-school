@@ -44,7 +44,7 @@ class API::V1::MutantsController < API::V1::APIController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_mutant
-      @mutant = Mutant.find(params[:id])
+      @mutant = Mutant.includes(:advisor).find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

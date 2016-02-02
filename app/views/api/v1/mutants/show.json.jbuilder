@@ -7,6 +7,7 @@ json.updated_at @mutant.updated_at
 json.eligibility_begins_at @mutant.eligibility_begins_at
 json.eligibility_ends_at @mutant.eligibility_ends_at
 json.may_advise_beginning_at @mutant.may_advise_beginning_at
+json.url api_v1_mutant_url(@mutant)
 
 if @mutant.advisor
   json.advisor do
