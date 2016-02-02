@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :mutants, except: [:new, :edit] do
         resources :enrollments, except: [:new, :edit, :update]
+        resources :advisees, only: [:index, :create, :destroy]
       end
       resources :terms, except: [:new, :edit] do
         resources :enrollments, except: [:new, :edit, :update]
