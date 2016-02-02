@@ -1,5 +1,5 @@
 class API::V1::MutantsController < API::V1::APIController
-  before_action :set_mutant, only: [:show, :edit, :update, :destroy]
+  before_action :set_mutant, only: [:show, :update, :destroy]
 
   # GET /mutants
   # GET /mutants.json

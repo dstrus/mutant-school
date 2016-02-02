@@ -1,5 +1,5 @@
 class API::V1::TermsController < API::V1::APIController
-  before_action :set_term, only: [:show, :edit, :update, :destroy]
+  before_action :set_term, only: [:show, :update, :destroy]
 
   # GET /terms
   # GET /terms.json
