@@ -10,7 +10,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'rack-cors', require: 'rack/cors'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+# gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'apipie-rails'
 
 group :development, :test do
   gem 'pry-rails'
